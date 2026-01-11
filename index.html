@@ -1,0 +1,373 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Maura Harris | Digital Delivery Lead</title>\
+    <style>\
+        :root \{\
+            --primary: #2c3e50;\
+            --accent: #3498db;\
+            --text-dark: #333;\
+            --text-light: #666;\
+            --bg-light: #f8f9fa;\
+            --white: #ffffff;\
+        \}\
+\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+        \}\
+\
+        body \{\
+            line-height: 1.6;\
+            color: var(--text-dark);\
+        \}\
+\
+        /* Navigation */\
+        nav \{\
+            background: var(--white);\
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);\
+            padding: 1rem 5%;\
+            position: sticky;\
+            top: 0;\
+            z-index: 1000;\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+\
+        .logo \{\
+            font-size: 1.5rem;\
+            font-weight: bold;\
+            color: var(--primary);\
+        \}\
+\
+        .nav-links a \{\
+            text-decoration: none;\
+            color: var(--text-dark);\
+            margin-left: 2rem;\
+            font-weight: 500;\
+            transition: color 0.3s;\
+        \}\
+\
+        .nav-links a:hover \{\
+            color: var(--accent);\
+        \}\
+\
+        /* Hero Section */\
+        .hero \{\
+            display: flex;\
+            align-items: center;\
+            justify-content: space-between;\
+            padding: 4rem 5%;\
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);\
+            min-height: 80vh;\
+        \}\
+\
+        .hero-text \{\
+            flex: 1;\
+            padding-right: 2rem;\
+        \}\
+\
+        .hero-text h1 \{\
+            font-size: 3.5rem;\
+            line-height: 1.2;\
+            margin-bottom: 1rem;\
+            color: var(--primary);\
+        \}\
+\
+        .hero-text h2 \{\
+            font-size: 1.5rem;\
+            color: var(--accent);\
+            margin-bottom: 1.5rem;\
+            font-weight: normal;\
+        \}\
+\
+        .hero-text p \{\
+            font-size: 1.1rem;\
+            margin-bottom: 2rem;\
+            max-width: 600px;\
+            color: var(--text-light);\
+        \}\
+\
+        .btn \{\
+            display: inline-block;\
+            padding: 1rem 2rem;\
+            background: var(--primary);\
+            color: var(--white);\
+            text-decoration: none;\
+            border-radius: 5px;\
+            font-weight: bold;\
+            transition: background 0.3s;\
+        \}\
+\
+        .btn:hover \{\
+            background: var(--accent);\
+        \}\
+\
+        .hero-image \{\
+            flex: 1;\
+            display: flex;\
+            justify-content: center;\
+        \}\
+\
+        .hero-image img \{\
+            max-width: 100%;\
+            height: auto;\
+            border-radius: 20px;\
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);\
+            /* This is where the AI character image goes */\
+        \}\
+\
+        /* About Section */\
+        .about \{\
+            padding: 5rem 5%;\
+            background: var(--white);\
+            display: flex;\
+            align-items: center;\
+            gap: 4rem;\
+        \}\
+\
+        .about-photo img \{\
+            width: 300px;\
+            height: 300px;\
+            object-fit: cover;\
+            border-radius: 50%;\
+            border: 5px solid var(--bg-light);\
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);\
+        \}\
+\
+        .about-text h2 \{\
+            margin-bottom: 1.5rem;\
+            color: var(--primary);\
+        \}\
+\
+        /* Skills Section */\
+        .skills \{\
+            padding: 5rem 5%;\
+            background: var(--bg-light);\
+            text-align: center;\
+        \}\
+\
+        .skills h2 \{\
+            margin-bottom: 3rem;\
+            color: var(--primary);\
+        \}\
+\
+        .skills-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\
+            gap: 2rem;\
+        \}\
+\
+        .skill-card \{\
+            background: var(--white);\
+            padding: 2rem;\
+            border-radius: 10px;\
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);\
+            transition: transform 0.3s;\
+        \}\
+\
+        .skill-card:hover \{\
+            transform: translateY(-5px);\
+        \}\
+\
+        .skill-card h3 \{\
+            color: var(--accent);\
+            margin-bottom: 1rem;\
+        \}\
+\
+        /* Experience Timeline */\
+        .experience \{\
+            padding: 5rem 5%;\
+        \}\
+\
+        .experience h2 \{\
+            text-align: center;\
+            margin-bottom: 3rem;\
+            color: var(--primary);\
+        \}\
+\
+        .timeline-item \{\
+            display: flex;\
+            margin-bottom: 3rem;\
+            border-left: 3px solid var(--accent);\
+            padding-left: 2rem;\
+            position: relative;\
+        \}\
+\
+        .timeline-item::before \{\
+            content: '';\
+            width: 15px;\
+            height: 15px;\
+            background: var(--accent);\
+            border-radius: 50%;\
+            position: absolute;\
+            left: -9px;\
+            top: 5px;\
+        \}\
+\
+        .job-header h3 \{\
+            font-size: 1.4rem;\
+            color: var(--primary);\
+        \}\
+\
+        .job-header span \{\
+            color: var(--text-light);\
+            font-size: 0.9rem;\
+            display: block;\
+            margin-bottom: 0.5rem;\
+        \}\
+\
+        .key-project \{\
+            background: #eef2f7;\
+            padding: 1rem;\
+            border-radius: 5px;\
+            margin-top: 1rem;\
+            border-left: 4px solid var(--primary);\
+        \}\
+\
+        /* Footer */\
+        footer \{\
+            background: var(--primary);\
+            color: var(--white);\
+            padding: 3rem 5%;\
+            text-align: center;\
+        \}\
+\
+        footer a \{\
+            color: var(--accent);\
+            text-decoration: none;\
+        \}\
+\
+        /* Mobile Responsiveness */\
+        @media (max-width: 768px) \{\
+            .hero, .about \{\
+                flex-direction: column;\
+                text-align: center;\
+            \}\
+            .hero-text \{\
+                padding-right: 0;\
+                margin-bottom: 2rem;\
+            \}\
+            .hero-text h1 \{\
+                font-size: 2.5rem;\
+            \}\
+            .nav-links \{\
+                display: none;\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+    <nav>\
+        <div class="logo">Maura Harris</div>\
+        <div class="nav-links">\
+            <a href="#about">About</a>\
+            <a href="#experience">Experience</a>\
+            <a href="#projects">Projects</a>\
+            <a href="mailto:mauraharris@outlook.com" class="btn" style="margin-left: 1rem; padding: 0.5rem 1rem;">Contact Me</a>\
+        </div>\
+    </nav>\
+\
+    <section class="hero">\
+        <div class="hero-text">\
+            <h2>Digital & Agile Delivery Lead</h2>\
+            <h1>Orchestrating Digital Transformation</h1>\
+            <p>PMP & CSM certified leader bridging the gap between creative strategy and technical execution for Fortune 100 enterprises.</p>\
+            <a href="#experience" class="btn">View My Work</a>\
+        </div>\
+        <div class="hero-image">\
+            <img src="hero-image.png alt="Maura Harris Digital Lead Illustration">\
+        </div>\
+    </section>\
+\
+    <section id="about" class="about">\
+        <div class="about-photo">\
+            <img src="profile-photo.jpg" alt="Maura Harris Photo">\
+        </div>\
+        <div class="about-text">\
+            <h2>About Maura</h2>\
+            <p>I am a Technical Project Manager with over 11 years of experience leading cross-functional teams to success. I specialize in <strong>Agency-Style Delivery</strong>, managing $1M+ portfolios, and ensuring seamless execution across complex technical landscapes.</p>\
+            <br>\
+            <p>From <strong>AWS Cloud Migrations</strong> to <strong>Enterprise API Integrations</strong>, I focus on driving predictable outcomes that enhance client satisfaction and strengthen internal team performance.</p>\
+            <br>\
+            <p><strong>Certifications:</strong> PMP, CSM, SAFe Agilist (SA)</p>\
+        </div>\
+    </section>\
+\
+    <section class="skills">\
+        <h2>Core Competencies</h2>\
+        <div class="skills-grid">\
+            <div class="skill-card">\
+                <h3>Project Leadership</h3>\
+                <p>Full SDLC Management, Agile & Waterfall, Cross-Functional Team Leadership, Risk Management.</p>\
+            </div>\
+            <div class="skill-card">\
+                <h3>Financial & Strategy</h3>\
+                <p>Portfolio Revenue Management ($1M+), Forecasting, P&L Oversight, Strategic Roadmapping.</p>\
+            </div>\
+            <div class="skill-card">\
+                <h3>Technical Tools</h3>\
+                <p>Azure DevOps, JIRA, ServiceNow, SQL, Prompt Engineering (AI), Confluence.</p>\
+            </div>\
+            <div class="skill-card">\
+                <h3>Delivery Excellence</h3>\
+                <p>Process Optimization, Release Management, Client Relationship Management, QA/UAT Oversight.</p>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <section id="experience" class="experience">\
+        <h2>Professional Journey</h2>\
+\
+        <div class="timeline-item">\
+            <div class="job-content">\
+                <div class="job-header">\
+                    <h3>Technical Project Manager</h3>\
+                    <span>ICE / Black Knight Financial Services | June 2021 \'96 Present</span>\
+                </div>\
+                <p>Managing a digital delivery portfolio with <strong>$1M+ in annual revenue impact</strong>. Serving as the primary client liaison for high-visibility deployments and overseeing cross-functional teams of 25\'9650 members.</p>\
+                <div class="key-project">\
+                    <strong>\uc0\u55356 \u57286  Key Achievement:</strong> Directed a massive AWS migration initiative transferring 250,000+ documents to the cloud with zero downtime.\
+                </div>\
+            </div>\
+        </div>\
+\
+        <div class="timeline-item">\
+            <div class="job-content">\
+                <div class="job-header">\
+                    <h3>Senior Consultant & Project Manager</h3>\
+                    <span>Daugherty Business Solutions | Jan 2014 \'96 Apr 2021</span>\
+                </div>\
+                <p>Orchestrated Agile delivery for <strong>Fortune 100 clients</strong> (Charter/Spectrum, Express Scripts), acting as the operational bridge between creative strategy and technical execution.</p>\
+                <div class="key-project">\
+                    <strong>\uc0\u55357 \u56561  Key Project (Spectrum Mobile):</strong> Coordinated end-to-end digital delivery for mobile platform releases, managing DevOps workflows and "Go/No-Go" executive decisions.\
+                </div>\
+            </div>\
+        </div>\
+\
+    </section>\
+\
+    <footer>\
+        <h3>Let's Connect</h3>\
+        <p>Currently available for new opportunities in Digital Delivery & Project Management.</p>\
+        <br>\
+        <p>Email: <a href="mailto:mauraharris@outlook.com">mauraharris@outlook.com</a> | Phone: 314-496-8005</p>\
+        <br>\
+        <p>&copy; 2026 Maura Harris. All rights reserved.</p>\
+    </footer>\
+\
+</body>\
+</html>}
