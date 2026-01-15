@@ -1,373 +1,211 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2867
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Maura Harris — Delivery Manager / Project Manager / Scrum Master. Portfolio, experience highlights, and resume." />
+  <title>Maura Harris | Delivery & Project Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/maura-avatar.png" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Home">
+      <img class="brand__avatar" src="assets/maura-avatar.png" alt="Maura Harris avatar illustration" />
+      <span>Maura Harris</span>
+    </a>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Maura Harris | Digital Delivery Lead</title>\
-    <style>\
-        :root \{\
-            --primary: #2c3e50;\
-            --accent: #3498db;\
-            --text-dark: #333;\
-            --text-light: #666;\
-            --bg-light: #f8f9fa;\
-            --white: #ffffff;\
-        \}\
-\
-        * \{\
-            margin: 0;\
-            padding: 0;\
-            box-sizing: border-box;\
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
-        \}\
-\
-        body \{\
-            line-height: 1.6;\
-            color: var(--text-dark);\
-        \}\
-\
-        /* Navigation */\
-        nav \{\
-            background: var(--white);\
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);\
-            padding: 1rem 5%;\
-            position: sticky;\
-            top: 0;\
-            z-index: 1000;\
-            display: flex;\
-            justify-content: space-between;\
-            align-items: center;\
-        \}\
-\
-        .logo \{\
-            font-size: 1.5rem;\
-            font-weight: bold;\
-            color: var(--primary);\
-        \}\
-\
-        .nav-links a \{\
-            text-decoration: none;\
-            color: var(--text-dark);\
-            margin-left: 2rem;\
-            font-weight: 500;\
-            transition: color 0.3s;\
-        \}\
-\
-        .nav-links a:hover \{\
-            color: var(--accent);\
-        \}\
-\
-        /* Hero Section */\
-        .hero \{\
-            display: flex;\
-            align-items: center;\
-            justify-content: space-between;\
-            padding: 4rem 5%;\
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);\
-            min-height: 80vh;\
-        \}\
-\
-        .hero-text \{\
-            flex: 1;\
-            padding-right: 2rem;\
-        \}\
-\
-        .hero-text h1 \{\
-            font-size: 3.5rem;\
-            line-height: 1.2;\
-            margin-bottom: 1rem;\
-            color: var(--primary);\
-        \}\
-\
-        .hero-text h2 \{\
-            font-size: 1.5rem;\
-            color: var(--accent);\
-            margin-bottom: 1.5rem;\
-            font-weight: normal;\
-        \}\
-\
-        .hero-text p \{\
-            font-size: 1.1rem;\
-            margin-bottom: 2rem;\
-            max-width: 600px;\
-            color: var(--text-light);\
-        \}\
-\
-        .btn \{\
-            display: inline-block;\
-            padding: 1rem 2rem;\
-            background: var(--primary);\
-            color: var(--white);\
-            text-decoration: none;\
-            border-radius: 5px;\
-            font-weight: bold;\
-            transition: background 0.3s;\
-        \}\
-\
-        .btn:hover \{\
-            background: var(--accent);\
-        \}\
-\
-        .hero-image \{\
-            flex: 1;\
-            display: flex;\
-            justify-content: center;\
-        \}\
-\
-        .hero-image img \{\
-            max-width: 100%;\
-            height: auto;\
-            border-radius: 20px;\
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);\
-            /* This is where the AI character image goes */\
-        \}\
-\
-        /* About Section */\
-        .about \{\
-            padding: 5rem 5%;\
-            background: var(--white);\
-            display: flex;\
-            align-items: center;\
-            gap: 4rem;\
-        \}\
-\
-        .about-photo img \{\
-            width: 300px;\
-            height: 300px;\
-            object-fit: cover;\
-            border-radius: 50%;\
-            border: 5px solid var(--bg-light);\
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);\
-        \}\
-\
-        .about-text h2 \{\
-            margin-bottom: 1.5rem;\
-            color: var(--primary);\
-        \}\
-\
-        /* Skills Section */\
-        .skills \{\
-            padding: 5rem 5%;\
-            background: var(--bg-light);\
-            text-align: center;\
-        \}\
-\
-        .skills h2 \{\
-            margin-bottom: 3rem;\
-            color: var(--primary);\
-        \}\
-\
-        .skills-grid \{\
-            display: grid;\
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\
-            gap: 2rem;\
-        \}\
-\
-        .skill-card \{\
-            background: var(--white);\
-            padding: 2rem;\
-            border-radius: 10px;\
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);\
-            transition: transform 0.3s;\
-        \}\
-\
-        .skill-card:hover \{\
-            transform: translateY(-5px);\
-        \}\
-\
-        .skill-card h3 \{\
-            color: var(--accent);\
-            margin-bottom: 1rem;\
-        \}\
-\
-        /* Experience Timeline */\
-        .experience \{\
-            padding: 5rem 5%;\
-        \}\
-\
-        .experience h2 \{\
-            text-align: center;\
-            margin-bottom: 3rem;\
-            color: var(--primary);\
-        \}\
-\
-        .timeline-item \{\
-            display: flex;\
-            margin-bottom: 3rem;\
-            border-left: 3px solid var(--accent);\
-            padding-left: 2rem;\
-            position: relative;\
-        \}\
-\
-        .timeline-item::before \{\
-            content: '';\
-            width: 15px;\
-            height: 15px;\
-            background: var(--accent);\
-            border-radius: 50%;\
-            position: absolute;\
-            left: -9px;\
-            top: 5px;\
-        \}\
-\
-        .job-header h3 \{\
-            font-size: 1.4rem;\
-            color: var(--primary);\
-        \}\
-\
-        .job-header span \{\
-            color: var(--text-light);\
-            font-size: 0.9rem;\
-            display: block;\
-            margin-bottom: 0.5rem;\
-        \}\
-\
-        .key-project \{\
-            background: #eef2f7;\
-            padding: 1rem;\
-            border-radius: 5px;\
-            margin-top: 1rem;\
-            border-left: 4px solid var(--primary);\
-        \}\
-\
-        /* Footer */\
-        footer \{\
-            background: var(--primary);\
-            color: var(--white);\
-            padding: 3rem 5%;\
-            text-align: center;\
-        \}\
-\
-        footer a \{\
-            color: var(--accent);\
-            text-decoration: none;\
-        \}\
-\
-        /* Mobile Responsiveness */\
-        @media (max-width: 768px) \{\
-            .hero, .about \{\
-                flex-direction: column;\
-                text-align: center;\
-            \}\
-            .hero-text \{\
-                padding-right: 0;\
-                margin-bottom: 2rem;\
-            \}\
-            .hero-text h1 \{\
-                font-size: 2.5rem;\
-            \}\
-            .nav-links \{\
-                display: none;\
-            \}\
-        \}\
-    </style>\
-</head>\
-<body>\
-\
-    <nav>\
-        <div class="logo">Maura Harris</div>\
-        <div class="nav-links">\
-            <a href="#about">About</a>\
-            <a href="#experience">Experience</a>\
-            <a href="#projects">Projects</a>\
-            <a href="mailto:mauraharris@outlook.com" class="btn" style="margin-left: 1rem; padding: 0.5rem 1rem;">Contact Me</a>\
-        </div>\
-    </nav>\
-\
-    <section class="hero">\
-        <div class="hero-text">\
-            <h2>Digital & Agile Delivery Lead</h2>\
-            <h1>Orchestrating Digital Transformation</h1>\
-            <p>PMP & CSM certified leader bridging the gap between creative strategy and technical execution for Fortune 100 enterprises.</p>\
-            <a href="#experience" class="btn">View My Work</a>\
-        </div>\
-        <div class="hero-image">\
-            <img src="hero-image.png alt="Maura Harris Digital Lead Illustration">\
-        </div>\
-    </section>\
-\
-    <section id="about" class="about">\
-        <div class="about-photo">\
-            <img src="profile-photo.jpg" alt="Maura Harris Photo">\
-        </div>\
-        <div class="about-text">\
-            <h2>About Maura</h2>\
-            <p>I am a Technical Project Manager with over 11 years of experience leading cross-functional teams to success. I specialize in <strong>Agency-Style Delivery</strong>, managing $1M+ portfolios, and ensuring seamless execution across complex technical landscapes.</p>\
-            <br>\
-            <p>From <strong>AWS Cloud Migrations</strong> to <strong>Enterprise API Integrations</strong>, I focus on driving predictable outcomes that enhance client satisfaction and strengthen internal team performance.</p>\
-            <br>\
-            <p><strong>Certifications:</strong> PMP, CSM, SAFe Agilist (SA)</p>\
-        </div>\
-    </section>\
-\
-    <section class="skills">\
-        <h2>Core Competencies</h2>\
-        <div class="skills-grid">\
-            <div class="skill-card">\
-                <h3>Project Leadership</h3>\
-                <p>Full SDLC Management, Agile & Waterfall, Cross-Functional Team Leadership, Risk Management.</p>\
-            </div>\
-            <div class="skill-card">\
-                <h3>Financial & Strategy</h3>\
-                <p>Portfolio Revenue Management ($1M+), Forecasting, P&L Oversight, Strategic Roadmapping.</p>\
-            </div>\
-            <div class="skill-card">\
-                <h3>Technical Tools</h3>\
-                <p>Azure DevOps, JIRA, ServiceNow, SQL, Prompt Engineering (AI), Confluence.</p>\
-            </div>\
-            <div class="skill-card">\
-                <h3>Delivery Excellence</h3>\
-                <p>Process Optimization, Release Management, Client Relationship Management, QA/UAT Oversight.</p>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <section id="experience" class="experience">\
-        <h2>Professional Journey</h2>\
-\
-        <div class="timeline-item">\
-            <div class="job-content">\
-                <div class="job-header">\
-                    <h3>Technical Project Manager</h3>\
-                    <span>ICE / Black Knight Financial Services | June 2021 \'96 Present</span>\
-                </div>\
-                <p>Managing a digital delivery portfolio with <strong>$1M+ in annual revenue impact</strong>. Serving as the primary client liaison for high-visibility deployments and overseeing cross-functional teams of 25\'9650 members.</p>\
-                <div class="key-project">\
-                    <strong>\uc0\u55356 \u57286  Key Achievement:</strong> Directed a massive AWS migration initiative transferring 250,000+ documents to the cloud with zero downtime.\
-                </div>\
-            </div>\
-        </div>\
-\
-        <div class="timeline-item">\
-            <div class="job-content">\
-                <div class="job-header">\
-                    <h3>Senior Consultant & Project Manager</h3>\
-                    <span>Daugherty Business Solutions | Jan 2014 \'96 Apr 2021</span>\
-                </div>\
-                <p>Orchestrated Agile delivery for <strong>Fortune 100 clients</strong> (Charter/Spectrum, Express Scripts), acting as the operational bridge between creative strategy and technical execution.</p>\
-                <div class="key-project">\
-                    <strong>\uc0\u55357 \u56561  Key Project (Spectrum Mobile):</strong> Coordinated end-to-end digital delivery for mobile platform releases, managing DevOps workflows and "Go/No-Go" executive decisions.\
-                </div>\
-            </div>\
-        </div>\
-\
-    </section>\
-\
-    <footer>\
-        <h3>Let's Connect</h3>\
-        <p>Currently available for new opportunities in Digital Delivery & Project Management.</p>\
-        <br>\
-        <p>Email: <a href="mailto:mauraharris@outlook.com">mauraharris@outlook.com</a> | Phone: 314-496-8005</p>\
-        <br>\
-        <p>&copy; 2026 Maura Harris. All rights reserved.</p>\
-    </footer>\
-\
-</body>\
-</html>}
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+
+    <button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Hero">
+      <img class="hero__bg" src="assets/hero-image.png" alt="" />
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <p class="kicker">Delivery Manager • Project Manager • Scrum Master • Product Owner</p>
+        <h1>Building predictable delivery, aligned stakeholders, and high‑performing teams.</h1>
+        <p class="lede">
+          PMP, CSM, SAFe Agilist (SA). 25+ years leading complex programs across financial services, telecom,
+          healthcare, and compliance‑driven housing.
+        </p>
+
+        <div class="hero__buttons">
+          <a class="btn btn--primary" href="#contact">Let’s connect</a>
+          <a class="btn btn--ghost" href="assets/Maura_Harris_Resume_01132026.docx" download>Download resume</a>
+        </div>
+
+        <div class="hero__chips" aria-label="Highlights">
+          <span>$1M+ portfolios</span>
+          <span>PI Planning</span>
+          <span>DevOps optimization</span>
+          <span>Cross‑functional leadership</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p>
+            I’m a delivery‑focused Technical Project Manager and Agile leader who translates business goals into
+            actionable plans, keeps teams unblocked, and keeps clients informed with crisp, transparent communication.
+            I enjoy solving complex delivery problems—especially where compliance, data, and multiple systems intersect.
+          </p>
+          <p class="muted">
+            Tools I use often: Azure DevOps, JIRA, ServiceNow, Confluence, Visio, Excel, SQL, and GitHub.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Certifications</h3>
+          <ul>
+            <li><strong>PMP</strong> — Project Management Institute</li>
+            <li><strong>CSM</strong> — Scrum Alliance</li>
+            <li><strong>SAFe Agilist (SA)</strong> — Scaled Agile, Inc.</li>
+            <li><strong>PMI‑CPMAI</strong> — In progress (expected 2026)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2>Core strengths</h2>
+        <div class="grid">
+          <div class="tile">
+            <h3>Program & portfolio delivery</h3>
+            <p>Manage scope, timelines, and stakeholder expectations across parallel workstreams.</p>
+          </div>
+          <div class="tile">
+            <h3>Agile leadership</h3>
+            <p>Facilitate ceremonies, remove blockers, and help teams deliver with steady velocity.</p>
+          </div>
+          <div class="tile">
+            <h3>Risk & issue management</h3>
+            <p>Proactive triage, clear escalation paths, and consistent status reporting.</p>
+          </div>
+          <div class="tile">
+            <h3>Client partnership</h3>
+            <p>Translate technical details into decisions that build trust and drive outcomes.</p>
+          </div>
+          <div class="tile">
+            <h3>Process optimization</h3>
+            <p>Improve operational workflows, release predictability, and delivery transparency.</p>
+          </div>
+          <div class="tile">
+            <h3>AI & innovation</h3>
+            <p>Practical use of Copilot/ChatGPT/Gemini for communication, analysis, and efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience highlights</h2>
+
+        <div class="timeline">
+          <article class="role">
+            <div class="role__meta">
+              <h3>Intercontinental Exchange (ICE) / Black Knight Financial Services</h3>
+              <p class="muted">Technical Project Manager • Jun 2021 – Present</p>
+            </div>
+            <ul>
+              <li>Serve as client liaison for high‑visibility deployments; align stakeholders and reduce delivery risk.</li>
+              <li>Lead delivery for a scrum team (10–12) while coordinating dependencies across 25–50 program stakeholders.</li>
+              <li>Support release management via triage sessions, incident prioritization, and end‑to‑end issue tracking.</li>
+              <li>Drive process optimization for complex mortgage loan deletion workflows across multiple applications.</li>
+              <li>Coordinate cross‑functional initiatives including API delivery and AWS document migration (250K+ docs).</li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <div class="role__meta">
+              <h3>Daugherty Business Solutions</h3>
+              <p class="muted">Senior Consultant & Project Manager • Jan 2014 – Apr 2021</p>
+            </div>
+            <ul>
+              <li>Delivered enterprise Agile programs using SAFe for Fortune 100 clients.</li>
+              <li>Coordinated Spectrum Mobile releases and DevOps workflows; facilitated Go/No‑Go sessions and executive comms.</li>
+              <li>Managed Express Scripts / Cigna release calendars; built executive dashboards for burn‑down and delivery metrics.</li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <div class="role__meta">
+              <h3>Housing & Public Sector Projects</h3>
+              <p class="muted">IT Project Manager / Senior PM / BA • 1995 – 2014</p>
+            </div>
+            <ul>
+              <li>Led SaaS implementation and system modernization for federal compliance requirements.</li>
+              <li>Delivered custom software for housing agencies with controlled release cycles and robust documentation.</li>
+              <li>Supported mission‑critical platforms processing large EFT/ACH volumes with HUD compliance.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="callout">
+          <p><strong>Want the full detail?</strong> Download the complete resume:</p>
+          <a class="btn btn--primary" href="assets/Maura_Harris_Resume_01132026.docx" download>Download resume (.docx)</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <div class="container two-col">
+        <div>
+          <h2>Contact</h2>
+          <p>If you’d like to discuss delivery leadership, program execution, or agile transformation, I’d love to connect.</p>
+          <div class="contact">
+            <a class="contact__item" href="mailto:mauraharris@outlook.com">mauraharris@outlook.com</a>
+            <a class="contact__item" href="tel:+13144968005">314‑496‑8005</a>
+          </div>
+
+          <p class="muted small">
+            Tip: update the links above (and add LinkedIn) in <code>index.html</code> before publishing.
+          </p>
+        </div>
+
+        <form class="card form" onsubmit="return false;" aria-label="Contact form">
+          <h3>Quick note (optional)</h3>
+          <label>
+            Your name
+            <input type="text" id="name" placeholder="Name" autocomplete="name" />
+          </label>
+          <label>
+            Your email
+            <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+          </label>
+          <label>
+            Message
+            <textarea id="message" rows="4" placeholder="What would you like to chat about?"></textarea>
+          </label>
+          <button class="btn btn--primary" id="copyBtn">Copy message</button>
+          <p class="muted small">This form doesn’t send email (GitHub Pages is static). The button copies your message so you can paste it into an email.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <span>© 2026 Maura Harris</span>
+      <a href="#top" class="muted">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
