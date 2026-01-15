@@ -97,20 +97,32 @@ a:hover{ text-decoration:underline; }
   overflow:hidden;
   border-bottom:1px solid var(--border);
 }
+
+/* ✅ FIX: stop excessive oversize/zoom and keep the top visible */
 .hero__bg{
   position:absolute;
-  inset:-40px;
-  width:calc(100% + 80px);
-  height:calc(100% + 80px);
+  inset:0;                    /* was -40px (caused extra cropping) */
+  width:100%;
+  height:100%;
   object-fit:cover;
+  object-position: 50% 15%;   /* 👈 key: bias crop toward the top so your head stays visible */
   filter:saturate(1.05) contrast(1.05);
-  transform: scale(1.03);
+  transform:none;             /* was scale(1.03) (extra zoom) */
 }
+
+/* Optional: on very wide screens, nudge slightly lower so it doesn't look too "top-heavy" */
+@media (min-width: 1200px){
+  .hero__bg{
+    object-position: 50% 18%;
+  }
+}
+
 .hero__overlay{
   position:absolute;
   inset:0;
   background: linear-gradient(90deg, rgba(11,18,32,0.92) 0%, rgba(11,18,32,0.78) 45%, rgba(11,18,32,0.55) 100%);
 }
+
 .hero__content{
   position:relative;
   width:min(var(--max), calc(100% - 40px));
